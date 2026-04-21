@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Website Gue</title>
+
+    <!-- RESPONSIVE -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- BUTTON DARK MODE -->
+<button onclick="toggleDarkMode()" id="darkBtn">🌙 Dark Mode</button>
+
+<div class="container">
+
+    <img src="IMG_9353.jpg" width="150">
+
+    <h1>Fengki Andriansyah</h1>
+    <p>Mahasiswa Sistem Informasi yang sedang mengembangkan skill di bidang Web Development dan Digital Technology.</p>
+
+    <h2>Tentang Saya</h2>
+    <p>
+        Saya memiliki ketertarikan dalam dunia teknologi, khususnya dalam pembuatan website.
+        Saat ini saya sedang fokus belajar HTML, CSS, dan pengembangan tampilan web yang modern dan responsive.
+    </p>
+
+    <h2>Skill</h2>
+    <ul>
+        <li>HTML Dasar</li>
+        <li>CSS & Responsive Design</li>
+        <li>UI Styling & Layouting</li>
+        <li>Dasar JavaScript</li>
+    </ul>
+
+    <h2>Kontak</h2>
+    <p>📸 Instagram: @fengki_a</p>
+    <p>📧 Email: fengkiandriansyah@gmail.com</p>
+
+    <a href="https://instagram.com/fengki_a" target="_blank">
+        <button>Follow IG</button>
+    </a>
+
+</div>
+
+<!-- JAVASCRIPT -->
+<script>
+function toggleDarkMode() {
+    document.body.classList.toggle("dark");
+
+    let btn = document.getElementById("darkBtn");
+
+    if (document.body.classList.contains("dark")) {
+        btn.innerText = "☀️ Light Mode";
+    } else {
+        btn.innerText = "🌙 Dark Mode";
+    }
+}
+</script>
+
+</body>
+</html>

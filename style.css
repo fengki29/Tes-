@@ -1,0 +1,141 @@
+body {
+    font-family: Arial;
+    text-align: center;
+    background: linear-gradient(to right, #667eea, #764ba2);
+}
+
+/* CONTAINER */
+.container {
+    background: white;
+    padding: 20px;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    max-width: 400px;
+
+    animation: fadeIn 1s ease;
+}
+
+/* TEXT */
+h1 {
+    color: #333;
+}
+
+h2 {
+    color: #555;
+}
+
+p {
+    color: #666;
+}
+
+/* LIST */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* FOTO */
+img {
+    border-radius: 50%;
+    border: 3px solid black;
+    transition: 0.3s;
+    margin-bottom: 15px;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+/* BUTTON */
+button {
+    padding: 10px 20px;
+    border: none;
+    background: black;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: gray;
+    transform: scale(1.05);
+}
+
+/* DARK MODE */
+.dark {
+    background: #121212;
+}
+
+.dark .container {
+    background: #1e1e1e;
+    color: white;
+}
+
+.dark h1,
+.dark h2,
+.dark p {
+    color: white;
+}
+
+.dark button {
+    background: white;
+    color: black;
+}
+
+/* DARK BUTTON */
+#darkBtn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+/* ANIMASI */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+
+    .container {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    img {
+        width: 100px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    button {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    #darkBtn {
+        top: 10px;
+        right: 10px;
+        font-size: 12px;
+        padding: 8px;
+    }
+}
